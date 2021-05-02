@@ -1,0 +1,36 @@
+{% extends 'user/base.html' %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+
+
+    
+{% load static %}
+
+
+
+{% block bodycontent %}
+
+<h1>Hi this is user Authentication</h1>
+
+
+
+
+{% if request.user.is_authenticated %}
+    <h1>{{ request.user }}</h1>
+{% endif %}
+    
+
+
+
+
+    
+
+
+{% endblock bodycontent %}
+    
+
+
+    
