@@ -21,6 +21,10 @@ const Activate = ({ match }) => {
             await axios.post(baseURL+"/auth/users/activation/",body,config)
             .then((response)=>{
                 setVerified(true);
+                if (verified) {
+                    return window.location.href = "http://localhost:3000/login";
+                    // return <Redirect to='/login' /> for production
+                }
             })
             .catch((error)=>{
 

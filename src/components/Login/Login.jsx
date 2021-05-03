@@ -47,6 +47,7 @@ const Login = ({ is_authenticated, user, setUser, setIs_authenticated, LoginVeri
                 }
             }).catch((error)=>{
                 console.log(error);
+                alert("Login credentials doesn't match");
             });
         } catch (error) {
             

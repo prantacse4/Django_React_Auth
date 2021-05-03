@@ -157,7 +157,7 @@ const Index = () => {
                     <Route exact path="/signup">
                         <Signup is_authenticated={is_authenticated} />
                     </Route>
-                        
+                         
                     <Route exact path ="/profile">
                         <UserDataContext.Provider value={user}>
                             <Profile logout={logout} is_authenticated={is_authenticated}/>

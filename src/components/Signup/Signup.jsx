@@ -56,10 +56,13 @@ const Signup = ({ is_authenticated }) => {
                 await axios
                     .post(baseURL + "/auth/users/", body, config)
                     .then((response) => {
-                        console.log(response);
+                        
+                            alert("Signup Successfull. Activate Account from your Email. Then you can login");
+                        
                     })
                     .catch((error) => {
                         console.log(error.response);
+                        alert("Something Wrong");
                     });
             } else {
                 alert("Confirm Password Doen't Match");
